@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  sleepy:
+    build: .
+    ports:
+      - "9010:9010"
+    volumes:
+      - ./.env:/app/.env
+    restart: unless-stopped
