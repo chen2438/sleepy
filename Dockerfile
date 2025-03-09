@@ -1,3 +1,6 @@
+# 构建: docker build -t username/sleepy:latest . --no-cache
+# 推送: docker push username/sleepy:latest
+
 FROM python:3.10-slim
 
 WORKDIR /app

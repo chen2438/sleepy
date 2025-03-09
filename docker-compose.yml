@@ -2,7 +2,7 @@ version: '3'
 
 services:
   sleepy:
-    build: .
+    image: docker.io/chen2438/sleepy:latest
     ports:
       - "9010:9010"
     volumes:
