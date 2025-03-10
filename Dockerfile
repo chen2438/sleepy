@@ -1,5 +1,5 @@
-# 构建: docker build -t username/sleepy:latest . --no-cache
-# 推送: docker push username/sleepy:latest
+# 多平台构建预备: docker buildx create --name mybuilder --driver docker-container --bootstrap --use
+# 构建和推送: docker buildx build --platform linux/amd64,linux/arm64 -t chen2438/sleepy:latest --push .
 
 FROM python:3.10-slim
 

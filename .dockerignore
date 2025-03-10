@@ -15,4 +15,4 @@ ENV/
 *.md
 !README.md
 data.json
-data.*.json
+# data.*.json
